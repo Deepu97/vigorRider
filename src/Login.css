@@ -1,0 +1,128 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.body{
+   background-color: lightseagreen;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.outside{
+    background-color: white;
+    display: flex;
+    height: 40rem;
+    width: 60rem;
+   justify-content: center;
+   align-items: center;
+   border-radius: 1rem;
+   
+}
+/*sign in */
+.inside{
+    width:30rem;
+}
+#wel{
+   position: relative;
+   bottom: 2rem;
+   text-align: center;
+}
+#wel p{
+    margin:1rem;
+}
+.inside h1{
+    color:green;
+    font-size: 40px;
+    
+}
+.inside form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.inside form input{
+    font-size: 20px;
+    width:25rem;
+    height: 3rem;
+    margin: 1rem;
+    border-radius: 13px;
+    text-align: center;
+    border: none;
+    background-color: rgb(187, 209, 154);
+}
+.inside form input::placeholder{
+    font-size: 15px;
+}
+#anchor{
+    cursor: pointer;
+    text-decoration: none;
+}
+#signin{
+    width:10rem;
+    height: 3rem;
+    border-radius: 13px;
+    color: white;
+    background-color: rgb(115 168 140);
+    border: none;
+   margin-top: 2rem;
+   cursor: pointer;
+}
+#pera{
+    margin: 1rem;
+}
+/*signup click portion*/
+.sign-up{
+    width: 30rem;
+    background-color: greenyellow;
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top-right-radius:5rem ;
+    animation:change 10s infinite cubic-bezier(0.445, 0.05, 0.55, 0.95);
+   
+ 
+}
+@keyframes change {
+    
+
+    0%{
+      background-color: greenyellow;
+    }
+    30%{
+        background: linear-gradient(pink,rgb(215, 228, 44));
+    }
+    50%{
+        background: linear-gradient(rgb(216, 162, 200),orange);
+
+    }
+    80%{
+        background:linear-gradient(rgb(55, 123, 212),rgb(79, 211, 216));
+    }
+    100%{
+        background:linear-gradient(rgb(138, 107, 189,rgb(109, 197, 131)));
+    }
+}
+.sign-up button{
+    margin-top: 4rem;
+    width:16rem;
+    height: 3rem;
+    border-radius: 13px;
+    background-color: rgb(84, 177, 84);
+    border: none;
+    color: aliceblue;
+    font-size: 20px;
+    
+
+}
+.sign-up h1{
+    margin-bottom: 2rem;
+    font-size: 40px;
+    
+}
+
