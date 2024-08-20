@@ -1,0 +1,108 @@
+.signupContainer{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(212, 190, 206);
+   
+}
+.disp{
+    display: flex;
+    border-radius: 4rem;
+}
+#head{
+    color: yellow;
+}
+#pera{
+margin:1rem;
+font-size: 30px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+color:yellowgreen;
+text-shadow: 1px 1px 2px ;
+font-weight: 800;
+}
+.formData{
+    display: flex;
+    flex-direction: column;
+    width:30rem;
+    height: 37rem;
+    align-items: center;
+    background-color: white;
+    border-top-right-radius: 2rem;
+}
+.formData input{
+    margin-top:10px;
+   
+}
+.formData input::placeholder{
+  position: relative;
+  left: 12px;
+  padding: 3px;
+}
+
+.bkg{
+    background-image: url("./3302177.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 30rem;
+    height: 37rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 2rem;
+
+}
+
+.grow{
+    display: flex;
+    justify-content: space-around;
+   gap: 2rem;
+   
+}
+.inp{
+ width:10rem;
+ height: 40px;
+ border-radius:7px;
+ outline: none;
+ border: 2px solid gray;
+
+}
+
+
+#select{
+    width:22rem;
+    height: 3rem;
+    border-radius: 7px ;
+    border: 2px solid gray;
+   outline: none;
+   margin-top: 12px;
+   
+    
+}
+#date{
+    width:22rem;
+    height: 3rem;
+    outline: none;
+   border: 2px solid gray;
+   border-radius: 7px;
+    
+}
+#username,#mobile,#password,#confirm{
+    width:22rem;
+    height: 3rem;
+    border-radius: 7px ;
+    border: 2px solid gray;
+   
+   outline: none;
+   margin-top: 12px;
+}
+#btn{
+    margin-top: 1rem;
+    width:22rem;
+    height: 2.5rem;
+    border-radius: 7px;
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+}

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import {useLocation} from 'react-router-dom';
+import './reset.css'
 import axios from 'axios';
 export default function Reset() {
 const[user,setuser]=useState('');
@@ -34,16 +35,21 @@ function reload(e){
 }
     return(
         <>
-        <form onSubmit={reload} action="" style={{textAlign:"center"}}>
+
+
+
+        
+        <form className="form" onSubmit={reload} action="" style={{textAlign:"center"}}>
+           <h1>Forgot Password</h1>
+            
             <input type="text" onChange={(e)=>setuser(e.target.value)} placeholder="enter user name"/>
-            <br/>
-            <br/>
+            
+            
             <input type="password" onChange={(e)=>setpassword(e.target.value)} placeholder="enter password "/>
-            <br/>
-            <br/>
+          
+
             <input type="password" onChange={(e)=>setconfirm(e.target.value)} placeholder="confirm password"/>
-            <br/>
-            <br/>
+          
             <button onClick={()=>resetPassword()}>Reset Password</button>
         </form>
         </>

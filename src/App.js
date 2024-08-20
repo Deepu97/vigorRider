@@ -1,7 +1,13 @@
-import Api from './Api';
-import Reset from './Reset';
+import Login from './userAccount/Login';
+import Reset from './userAccount/Reset';
+import HomePage from "./userAccount/HomePage";
+
 import './App.css';
-import{HashRouter,Route,Routes} from 'react-router-dom';
+import{BrowserRouter,Route,Routes} from 'react-router-dom';
+import SignUp from './userAccount/SignUp';
+
+import PrivatePages from './userAccount/PrivatePages';
+
 
 
 
@@ -10,15 +16,23 @@ import{HashRouter,Route,Routes} from 'react-router-dom';
 function App() {
 
 return( 
+ 
 
 <>
-<HashRouter>
+
+<BrowserRouter>
 <Routes>
-  <Route path="/" element={<Api/>}/>
+  <Route element={<PrivatePages/>} > 
+  <Route path="/" element={<HomePage/>}/>
+
   <Route path="/resetPassword" element={<Reset/>}/> 
+  </Route>
+  <Route path="/signup" element={<SignUp/>}/> 
+  <Route path="/login" element={<Login/>}/>
+  
 </Routes>
 
-</HashRouter>
+</BrowserRouter>
 
 </>
 
